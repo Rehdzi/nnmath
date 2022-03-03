@@ -1,9 +1,7 @@
 <template>
     <div class="h-screen bg-gray-600 flex flex-row space-x-4 p-4">
       <div class="w-1/5 h-min rounded-xl bg-purple-400 p-5 flex flex-col space-y-4 ">
-        <div class="hidden">
-            <add-formula-btn/>
-        </div>
+            <add-formula-form/>
         
         
         <NavElement/>
@@ -17,7 +15,7 @@
 </template>
 
 <script>
-    import AddFormulaBtn from './AddFormulaButton.vue'
+    import AddFormulaForm from './AddFormulaForm.vue'
     import NavElement from './NavElement.vue'
     export default {
         name: 'mainpage',
@@ -28,7 +26,7 @@
         },
         components: {
             NavElement,
-            AddFormulaBtn,
+            AddFormulaForm,
         }
     }
 </script>
