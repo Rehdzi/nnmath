@@ -1,6 +1,6 @@
 <template>
-    <div class="h-screen bg-gray-600 flex flex-row space-x-4 p-4">
-      <div class="w-1/5 h-min rounded-xl bg-purple-400 p-5 flex flex-col space-y-4 ">
+    <div class="h-screen bg-slate-200 flex flex-row space-x-4 p-4">
+      <div class="w-1/5 h-min rounded-xl bg-slate-50 p-5 flex flex-col space-y-4 ">
             <AddForm
             @create="createPost"
             />
@@ -8,8 +8,8 @@
             :posts="posts"
             />
       </div>
-      <div class="w-4/5 h-full rounded-xl bg-green-400 p-14 ">
-
+      <div class="w-4/5 h-full rounded-xl bg-slate-50 p-14 ">
+        
         {{text}}
       </div>
     </div>

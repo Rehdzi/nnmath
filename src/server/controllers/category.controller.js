@@ -1,7 +1,7 @@
 const genericCrud = require('./generic.controller')
-const Category = require('../model')
+const сategory = require('../model')
 
 
 module.exports = {
-    ... genericCrud(Category)
+    ... genericCrud(сategory)
 }

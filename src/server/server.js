@@ -2,6 +2,7 @@ const express = require("express")
 const mongoose = require("mongoose")
 const bodyParser = require("body-parser")
 const http = require('http')
+const { routes } = require('./routes')
 
 mongoose.connect('mongodb://127.0.0.1:27017/nnmath', { 
     useNewUrlParser: true ,
@@ -19,6 +20,10 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 //app.use(morgan('dev'));
 
+
+routes.forEach((item) => {
+    app.use(`/api/v1/${item}`, require(`./routes/${item}`));
+});
 
 // routes
 const PORT = 3000;

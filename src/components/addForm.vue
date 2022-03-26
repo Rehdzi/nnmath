@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-row space-x-4">
         <form @submit.prevent>
-            <span class="bg-yellow-200 rounded-lg text-black p-2 px-4 mt-1" 
+            <span class="bg-sky-50 border-2 border-sky-400 rounded-lg text-sky-400 p-2 px-4 mt-1" 
             @click="createPost">+</span>
             <input 
             v-model="post.title"
@@ -35,7 +35,3 @@ export default {
     }
 }
 </script>
-
-<style>
-
-</style>
