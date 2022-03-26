@@ -16,6 +16,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 import PostsDrawer from './postsDrawer.vue'
 import AddForm from './addForm.vue'
     export default {
@@ -35,7 +37,18 @@ import AddForm from './addForm.vue'
         methods: {
             createPost(post){
                 this.posts.push(post);
+            },
+            async fetchPosts(){
+                try{
+                    //const response = await axios.get();
+                } 
+                catch(e){
+                    alert('Ошишка.')
+                }
             }
+        },
+        mounted(){
+            this.fetchPosts();
         }
     }
 </script>
