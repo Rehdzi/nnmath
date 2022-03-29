@@ -1,21 +1,22 @@
 <template>
   <div v-show="visibility">
-      <h2>{{formula.title}}</h2>
+      <h2>{{title}}</h2>
+      <p></p>
   </div>
 </template>
 
 <script>
 export default {
     name: 'form1',
+
     data () {
         return {
-            formula: {
                 title: 'Формула №1',
-                imgSource: "",
                 visibility: true,
-            }
             
         }
-    }
+    },
+
+    
 }
 </script>

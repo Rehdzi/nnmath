@@ -14,17 +14,23 @@ import form3 from './form3.vue'
 
 export default {
     name: 'form1m',
+
     data () {
         return {
                 title: 'Формула №1',
+                visibility: false,
         }
     },
+
     components: {
       form1, form2, form3
     },
     methods: {
     hideSmth(){
-                form2.visibility = false;
+                form1.visibility= true;
+                form2.visibility= false;
+                form3.visibility= false;
+                console.log('гавно');
             },
         },
 }
