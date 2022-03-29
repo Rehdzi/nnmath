@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
@@ -20,7 +19,7 @@
     "morgan": "^1.10.0",
     "qs": "^6.10.3",
     "ramda": "^0.28.0",
-    "vue": "^3.2.25"
+    "vue": "^3.2.31"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.0",

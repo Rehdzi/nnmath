@@ -1,0 +1,21 @@
+{
+    "posts": [
+        {   "id":1,
+            "title":"Формула№1",
+            "img":"1.png",
+            "body":"lorem ipsum dolor sit amet"
+        },
+        {   "id":2,
+            "title":"Формула№2",
+            "img":"2.png",
+            "body":"wehnnnnnnsssovrsopisp"
+        },
+        {   "id":3,
+            "title":"Формула№3",
+            "img":"3.png",
+            "body":"lorem ipsum ya pokakal:)"
+        }
+
+    ]
+
+}

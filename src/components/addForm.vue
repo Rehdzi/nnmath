@@ -25,7 +25,7 @@ export default {
     methods:{
         createPost(){
             
-            this.post.id = Date.now()*Math.random(),
+            this.post.id++,
             this.$emit('create', this.post)
             this.post = {
                 title: ''
