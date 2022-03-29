@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row space-x-4">
-        <form @submit.prevent>
+        <form @submit.prevent class="hidden">
             <span class="bg-sky-50 border-2 border-sky-400 rounded-lg text-sky-400 p-2 px-4 mt-1" 
             @click="createPost">+</span>
             <input 
@@ -17,7 +17,8 @@ export default {
     data(){
         return{
             post: {
-                title: ''
+                title: '',
+                body: 'content'
             }
         }
     },

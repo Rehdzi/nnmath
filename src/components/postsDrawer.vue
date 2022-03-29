@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate2-50 border-2 hover:border-4 border-sky-400 rounded-lg text-sky-900 p-2 w-full" 
+  <div class="bg-slate2-50 border-2 border-sky-400 rounded-lg text-sky-900 p-2 w-full" 
   v-for="post in posts" :key="post">
           <div>{{post.title}}</div>
       </div>
