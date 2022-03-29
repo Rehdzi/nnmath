@@ -6,11 +6,11 @@
 
 <script>
 export default {
-    name: 'form1',
+    name: 'form2',
     data () {
         return {
             formula: {
-                title: 'Формула №1',
+                title: 'Формула №2',
                 imgSource: "",
                 visibility: true,
             }
